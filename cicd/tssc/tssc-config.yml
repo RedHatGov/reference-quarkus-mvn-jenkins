@@ -55,7 +55,7 @@ tssc-config:
   - implementer: SonarQube
     config:
       url: https://sonarqube-sonarqube.apps.tssc.rht-set.com/
-      user: reference-apps-sa
+      username: reference-apps-sa
 
   push-artifacts:
   - implementer: Maven
