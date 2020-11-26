@@ -6,7 +6,7 @@ USER 0
 ##############################
 # vulenerability remediation #
 ##############################
-RUN dnf update -y && \
+RUN dnf update -y --allowerasing && \
     dnf clean all
 
 ##########################
