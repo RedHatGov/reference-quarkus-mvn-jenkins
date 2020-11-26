@@ -6,9 +6,8 @@ USER 0
 ##############################
 # vulenerability remediation #
 ##############################
-# TODO: Re-enable this, but it's failing the build
-# RUN dnf update -y && \
-#     dnf clean all
+RUN dnf update -y --allowerasing --skip-broken || true && \
+    dnf clean all
 
 ##########################
 # compliance remediation #
