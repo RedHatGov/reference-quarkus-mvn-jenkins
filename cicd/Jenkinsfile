@@ -1,5 +1,5 @@
 // Load the TSSC Jenkins Library
-library identifier: 'tssc-jenkins-library@main',
+library identifier: 'tssc-jenkins-library@image-signing',
 retriever: modernSCM([
     $class: 'GitSCMSource',
     remote: 'https://github.com/RedHatGov/tssc-jenkins-library.git'
