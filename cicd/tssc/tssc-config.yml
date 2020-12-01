@@ -17,21 +17,15 @@ tssc-config:
 
   unit-test:
   - implementer: Maven
-    config: {
-    }
 
   package:
   - implementer: Maven
-    config: {
-    }
 
   static-code-analysis:
   - implementer: SonarQube
-    config: {}
 
   push-artifacts:
   - implementer: Maven
-    config: {}
 
   create-container-image:
   - implementer: Buildah
@@ -40,15 +34,10 @@ tssc-config:
 
   push-container-image:
   - implementer: Skopeo
-    config: {}
 
   sign-container-image:
   - implementer: PodmanSign
-    config: {}
   - implementer: CurlPush
-    config:
-      container-image-signature-server-url: http://artifactory.apps.tssc.rht-set.com/artifactory/container-image-signatures
-      container-image-signature-server-username: tssc
 
   container-image-static-compliance-scan:
   # sample scans using DataStream file (preferred)
@@ -120,5 +109,4 @@ tssc-config:
 
   uat:
   - implementer: Maven
-    config: {
-    }
+
