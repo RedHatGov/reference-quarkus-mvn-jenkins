@@ -108,5 +108,5 @@ tssc-config:
       rules: cicd/ValidateEnv/
 
   uat:
-  - implementer: Maven
+  - implementer: MavenSeleniumCucumber
 
